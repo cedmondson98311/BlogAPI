@@ -13,7 +13,7 @@ BlogPosts.create('third','yaddi yaddi yadda','Jon Doe','1/1/11');
 router.get('/', (req, res) => {
 	res.json(BlogPosts.get());
 	console.log('all posts retrieved');
-	response.status(200).end();
+	res.status(200).end();
 });
 
 router.post('/', jsonParser, (req, res) => {
